@@ -9,7 +9,6 @@
     "repository": "https://github.com/Ryomen-Sukuna/GitGram",
     "website": "https://github.com/Ryomen-Sukuna/GitGram",
     "success_url": "https://t.me/ironbloodd",
-    "stack": "container",
     "env": {
         "ENV": {
             "description": "Fill this if you using environ variable as config.",
@@ -27,5 +26,10 @@
             "description": "Heroku app url, example: https://appname.herokuapp.com",
             "value": ""
         }
-    }
-  }
+     },
+     "buildpacks": [
+       {
+         "url": "heroku/python"
+       }
+     ]
+   }
